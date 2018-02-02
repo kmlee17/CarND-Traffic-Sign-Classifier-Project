@@ -109,23 +109,23 @@ My final model results were:
 If an iterative approach was chosen:
 * What was the first architecture that was tried and why was it chosen?
 
-** I first used the standard LeNet architecture to first validate that I was using Tensorflow correctly, as well as to establish a baseline for accuracy.**
+**I first used the standard LeNet architecture to first validate that I was using Tensorflow correctly, as well as to establish a baseline for accuracy.**
 
 * What were some problems with the initial architecture?
 
-** The initial architecture seemed to be overfitting because of the descrepancy between training and test set accuracy.**
+**The initial architecture seemed to be overfitting because of the descrepancy between training and test set accuracy.**
 
 * How was the architecture adjusted and why was it adjusted? Typical adjustments could include choosing a different model architecture, adding or taking away layers (pooling, dropout, convolution, etc), using an activation function or changing the activation function. One common justification for adjusting an architecture would be due to overfitting or underfitting. A high accuracy on the training set but low accuracy on the validation set indicates over fitting; a low accuracy on both sets indicates under fitting.
 
-** Because the training set was performing quite a bit better than the test set, I adjusted the LeNet architecture by adding in dropout, which is a form of regularization where weights have a probability of being dropped.  I believed this could help with overfitting.  I added the two dropouts after the fully-connected layers.**
+**Because the training set was performing quite a bit better than the test set, I adjusted the LeNet architecture by adding in dropout, which is a form of regularization where weights have a probability of being dropped.  I believed this could help with overfitting.  I added the two dropouts after the fully-connected layers.**
 
 * Which parameters were tuned? How were they adjusted and why?
 
-** I didn't adjust the hyperparameters or play with changing the dimensions of the convolutional layers too much.  If I had more time, I would have tried these to bump up the test set accuracy higher, but as is, the model performed fairly well and satisfied the criteria for the project.**
+**I didn't adjust the hyperparameters or play with changing the dimensions of the convolutional layers too much.  If I had more time, I would have tried these to bump up the test set accuracy higher, but as is, the model performed fairly well and satisfied the criteria for the project.**
 
 * What are some of the important design choices and why were they chosen? For example, why might a convolution layer work well with this problem? How might a dropout layer help with creating a successful model?
 
-** Adding dropout layers to the network architecture seemed to have the biggest impact as this helped greatly with overfitting.**
+**Adding dropout layers to the network architecture seemed to have the biggest impact as this helped greatly with overfitting.**
 
 ### Test a Model on New Images
 
